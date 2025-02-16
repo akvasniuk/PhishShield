@@ -8,4 +8,6 @@ phishshield-api/node_modules
 phishshield-ui/node_modules
 phishshield-api-nest
 phishshield-ui/.env
-phishshield-ml
+phishshield-ml/tokenizer.json
+phishshield-ml/tokenizer.pkl
+phishshield-ml/voting_classifier.pkl
