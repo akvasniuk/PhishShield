@@ -15,7 +15,14 @@ This is the PhishShield application, a multi-service application using Docker an
       cd PhishShield
       ```
 
-3. **Environment Variables:**
+3. **Download files into the phishshield-ml folder:**
+   - Link to files:
+
+      ```files
+     https://drive.google.com/drive/folders/17ypyaLJTHWZesOYeVrHcBPdyNpq7m7k9?usp=drive_link
+     ```
+
+4. **Environment Variables:**
     - Link to .env files:
 
       ```env
