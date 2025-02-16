@@ -1,0 +1,430 @@
+{
+  "profile": "Profil",
+  "subheader": "Les informations peuvent être modifiées",
+  "first_name": "Prénom",
+  "last_name": "Nom",
+  "email_address": "Adresse e-mail",
+  "save_details": "Enregistrer les détails",
+  "error_message": "Une erreur est survenue !",
+  "success_message": "Les détails ont été enregistrés avec succès !",
+  "is_required": "est requis",
+  "account_info": {
+    "upload_avatar": "Télécharger un avatar",
+    "save_avatar": "Enregistrer l'avatar",
+    "only_images_allowed": "Seules les images sont autorisées",
+    "file_size_limit": "La taille du fichier doit être inférieure à 1GB",
+    "selected_file": "Fichier sélectionné",
+    "success_message": "Avatar mis à jour avec succès!",
+    "error_message": "Une erreur s'est produite!"
+  },
+  "delete_account": {
+    "manage_account": "Gérer le compte",
+    "account_title": "Compte",
+    "delete_account": "Supprimer le compte",
+    "confirm_title": "Êtes-vous sûr de vouloir supprimer votre compte ?",
+    "confirm_message": "Cette action est irréversible. Une fois votre compte supprimé, toutes vos données seront définitivement supprimées.",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "delete_failed": "Échec de la suppression du compte"
+  },
+  "update_password": {
+    "password_title": "Mot de passe",
+    "password_subheader": "Mettre à jour le mot de passe",
+    "password_label": "Mot de passe",
+    "confirm_password_label": "Confirmer le mot de passe",
+    "password_required": "Le mot de passe est obligatoire",
+    "password_stronger": "Le mot de passe doit être plus fort",
+    "confirm_password_required": "La confirmation du mot de passe est obligatoire",
+    "passwords_must_match": "Les mots de passe doivent correspondre",
+    "update_button": "Mettre à jour"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "user": "Utilisateur",
+    "product": "Produit",
+    "blog": "Blog",
+    "phishing_detection": "Détection de Phishing",
+    "prediction_history": "Historique des prévisions",
+    "comments": "Commentaires",
+    "sign_in": "Se connecter",
+    "not_found": "Introuvable"
+  },
+  "layout": {
+    "info_alert": "Ceci est une alerte d'information."
+  },
+  "dashboard": {
+    "info_alert": "Ceci est une alerte d'information.",
+    "account": {
+      "home": "Accueil",
+      "profile": "Profil",
+      "settings": "Paramètres"
+    }
+  },
+  "searchbar": {
+    "placeholder": "Rechercher…",
+    "button": "Rechercher"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "unread_messages": "Vous avez {{count}} message non lu",
+    "unread_messages_plural": "Vous avez {{count}} messages non lus",
+    "mark_as_read": "Marquer tout comme lu",
+    "new": "Nouveau",
+    "before": "Avant cela",
+    "view_all": "Voir tout"
+  },
+  "accountPopover": {
+    "logout": "Se déconnecter",
+    "menu": {
+      "home": "Accueil",
+      "profile": "Profil",
+      "settings": "Paramètres"
+    },
+    "placeholders": {
+      "loadingUser": "Chargement des informations utilisateur..."
+    }
+  },
+  "authLayout": {
+    "alertMessage": "Ceci est une alerte d'information."
+  },
+  "page": {
+    "account": {
+      "title": "Compte de {{appName}}"
+    },
+    "blog": {
+      "title": "Blog - {{appName}}"
+    },
+    "comments": {
+      "title": "Commentaires de {{appName}}"
+    },
+    "notFound": {
+      "title": "404 page introuvable ! | Erreur - {{appName}}"
+    },
+    "phishingDetection": {
+      "title": "Détection d'hameçonnage - {{appName}}"
+    },
+    "detectionHistory": {
+      "title": "Historique des Détections - {{appName}}"
+    },
+    "products": {
+      "title": "Produits - {{appName}}"
+    },
+    "accountSetting": {
+      "title": "Paramètre {{appName}}"
+    },
+    "signIn": {
+      "title": "Se connecter - {{appName}}"
+    },
+    "signUp": {
+      "title": "S'inscrire - {{appName}}"
+    },
+    "users": {
+      "title": "Utilisateurs - {{appName}}"
+    }
+  },
+  "account": {
+    "title": "Compte"
+  },
+  "setting": {
+    "title": "Paramètres"
+  },
+  "googleAuth": {
+    "loginFailed": "Échec de la connexion"
+  },
+  "signIn": {
+    "title": "Se connecter",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "signInButton": "Se connecter",
+    "forgotPassword": "Mot de passe oublié ?",
+    "emailValidation": "Veuillez entrer une adresse e-mail valide.",
+    "emailRequired": "L'adresse e-mail est obligatoire.",
+    "passwordRequired": "Le mot de passe est obligatoire.",
+    "loginFailed": "Échec de la connexion. Veuillez vérifier vos identifiants.",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "getStarted": "Créer un compte",
+    "or": "OU"
+  },
+  "signUp": {
+    "title": "S'inscrire",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "signIn": "Se connecter",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "uploadAvatar": "Télécharger un avatar",
+    "selectedFile": "Fichier sélectionné",
+    "passwordStrength": "Force du mot de passe",
+    "captchaRequired": "Veuillez compléter le captcha",
+    "submitButton": "S'inscrire",
+    "successMessageRedirect": "Dans 30 secondes, vous serez redirigé",
+    "validation": {
+      "firstNameRequired": "Le prénom est requis",
+      "lastNameRequired": "Le nom de famille est requis",
+      "emailInvalid": "L'adresse e-mail doit être valide",
+      "emailRequired": "L'adresse e-mail est requise",
+      "passwordRequired": "Le mot de passe est requis",
+      "passwordStrength": "Le niveau du mot de passe doit être bon ou supérieur",
+      "avatarFileType": "Seules les images sont autorisées",
+      "avatarFileSize": "La taille du fichier doit être inférieure à 1 Go"
+    }
+  },
+  "repliesSection": {
+    "replyButton": "Répondre",
+    "replyToUser": "En réponse à",
+    "timeSuffix": "il y a",
+    "createdNow": "à l'instant",
+    "repliesTo": "Répond à",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "ownReply": {
+    "editPlaceholder": "Ne laissez pas ce champ vide !",
+    "error": "Une erreur s'est produite lors de la mise à jour de la réponse."
+  },
+  "confirmDelete": {
+    "title": "Supprimer le commentaire",
+    "message": "Êtes-vous sûr de vouloir supprimer ce commentaire ? Cette action est irréversible.",
+    "cancelButton": "Non, annuler",
+    "deleteButton": "Oui, supprimer"
+  },
+  "comment": {
+    "editPlaceholder": "Ne laissez pas ce champ vide !",
+    "updateButton": "Mettre à jour le commentaire"
+  },
+  "addReply": {
+    "placeholder": "Ajouter une réponse",
+    "addButton": "Ajouter une réponse",
+    "avatarAlt": "Avatar de l'utilisateur"
+  },
+  "core": {
+    "noComments": "Pas encore de commentaires. Soyez le premier à en ajouter un !",
+    "pagination": {
+      "firstPage": "Première Page",
+      "lastPage": "Dernière Page"
+    }
+  },
+  "addComment": {
+    "placeholder": "Ajouter un commentaire...",
+    "sendButton": "Envoyer",
+    "avatarAlt": "Avatar de l'utilisateur"
+  },
+  "youTag": {
+    "label": "Vous"
+  },
+  "placeholders": {
+    "defaultComment": "Écrivez un commentaire..."
+  },
+  "buttons": {
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "reply": "Répondre",
+    "replyIconAlt": "Icône de réponse",
+    "send": "Envoyer",
+    "update": "Mettre à jour"
+  },
+  "alerts": {
+    "deleteCommentWarning": "Si vous voulez supprimer le texte du commentaire, supprimez simplement le commentaire.",
+    "replyPlaceholderAlert": "Veuillez entrer une réponse avant de mettre à jour."
+  },
+  "notFound": {
+    "title": "Entschuldigung, Seite nicht gefunden!",
+    "description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden. Vielleicht haben Sie sich bei der URL vertippt? Überprüfen Sie bitte die Schreibweise.",
+    "button": "Zur Startseite",
+    "imageAlt": "404 Illustration"
+  },
+  "analytics": {
+    "visits": "visites"
+  },
+  "overview": {
+    "welcome": "Salut {{firstname}} {{lastname}}, Bon retour 👋",
+    "weeklyDetection": "Détection hebdomadaire",
+    "newUsers": "Nouveaux utilisateurs",
+    "weeklyPositiveDetection": "Détection positive hebdomadaire",
+    "weeklyNegativeDetection": "Détection négative hebdomadaire",
+    "predictionByType": "Prédiction actuelle par type",
+    "monthlyUsersAndPredictions": "Répartition mensuelle des utilisateurs et des prédictions",
+    "signUp": "Inscription",
+    "signUpSite": "sur le site",
+    "signUpGoogle": "Google",
+    "users": "Utilisateurs",
+    "predictions": "Prédictions"
+  },
+  "months": [
+    "Jan",
+    "Fév",
+    "Mar",
+    "Avr",
+    "Mai",
+    "Jun",
+    "Jul",
+    "Aoû",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Déc"
+  ],
+  "daysOfWeek": [
+    "Dim",
+    "Lun",
+    "Mar",
+    "Mer",
+    "Jeu",
+    "Ven",
+    "Sam"
+  ],
+  "phishing": {
+    "title": "Détection de Phishing",
+    "tabs": {
+      "url": "Par URL",
+      "text": "Par Texte",
+      "file": "Par Fichier"
+    },
+    "fields": {
+      "url": "Saisir l'URL",
+      "text": "Saisir le Texte",
+      "file": "Télécharger le Fichier"
+    },
+    "errors": {
+      "invalidURL": "Format d'URL invalide",
+      "urlRequired": "L'URL est requise",
+      "textRequired": "Le texte est requis",
+      "textMinLength": "Le texte doit comporter au moins 10 caractères",
+      "fileRequired": "Le fichier est requis"
+    },
+    "submitButton": "Détecter le Phishing",
+    "detectionResults": "Résultats de la Détection",
+    "models": {
+      "votingModel": "Modèle de Voting",
+      "xgboostModel": "Modèle XGBoost",
+      "logisticModel": "Régression Logistique",
+      "lstmModel": "Modèle LSTM",
+      "phishingURLModel": "Modèle d'URL de Phishing"
+    },
+    "results": {
+      "safe": "Sûr",
+      "phishing": "Phishing Détecté"
+    },
+    "probability": "Probabilité"
+  },
+  "prediction": {
+    "legitimate": "Légitime",
+    "phishing": "Phishing"
+  },
+  "dialog": {
+    "title": "Détails de la prédiction",
+    "generalInformation": "Informations générales",
+    "data": "Données",
+    "type": "Type",
+    "createdAt": "Créé à",
+    "modelPredictions": "Prédictions du modèle",
+    "model": "Modèle",
+    "prediction": "Prédiction",
+    "probability": "Probabilité",
+    "closeButton": "Fermer"
+  },
+  "toolbar": {
+    "selected": "{{count}} sélectionné(s)",
+    "filterBy": "Filtrer par {{field}}...",
+    "filterByData": "Filtrer par Données",
+    "filterByType": "Filtrer par Type",
+    "filterByModel": "Filtrer par Modèle"
+  },
+  "actions": {
+    "viewDetails": "Voir les détails",
+    "delete": "Supprimer",
+    "filterList": "Filtrer la liste"
+  },
+  "predictionHistory": {
+    "title": "Historique des Prédictions"
+  },
+  "table": {
+    "noData": {
+      "title": "Non trouvé",
+      "description": "Aucun résultat trouvé pour \"{{searchQuery}}\".<br />Essayez de vérifier les fautes de frappe ou d'utiliser des mots complets.",
+      "defaultSearchQuery": "votre recherche"
+    },
+    "headers": {
+      "result": "Résultat (Modèle, Prédiction, Probabilité)",
+      "data": "Données",
+      "type": "Type",
+      "createdAt": "Créé le"
+    }
+  },
+  "default": {
+    "searchQuery": "votre recherche"
+  },
+  "error": {
+    "fetchingPredictions": "Impossible de récupérer les données des prédictions."
+  },
+  "UserTableToolbar": {
+    "delete": "Supprimer",
+    "filter_list": "Filtrer la liste",
+    "filter_by": "Filtrer par",
+    "firstname": "Prénom",
+    "lastname": "Nom de famille",
+    "email": "E-mail",
+    "selected": "{{count}} sélectionné"
+  },
+  "UserTableRow": {
+    "edit_user": "Modifier l'utilisateur",
+    "delete_confirmation": "Confirmation de suppression",
+    "delete_prompt": "Êtes-vous sûr de vouloir supprimer `{firstname} {lastname}`?",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "role": "Rôle",
+    "verified": "Vérifié",
+    "not_verified": "Non vérifié",
+    "email": "E-mail",
+    "google_auth": "Authentification Google",
+    "is_verified": "Est vérifié"
+  },
+  "TableNoData": {
+    "not_found": "Non trouvé",
+    "no_results_found": "Aucun résultat trouvé pour",
+    "hint": "Essayez de vérifier les fautes de frappe ou d'utiliser des mots complets."
+  },
+  "UserView": {
+    "users": {
+      "title": "Utilisateurs",
+      "search_placeholder": "Rechercher des utilisateurs...",
+      "table_headers": {
+        "name": "Nom",
+        "email": "E-mail",
+        "role": "Rôle",
+        "verified": "Vérifié",
+        "google_auth": "Auth Google"
+      }
+    },
+    "errors": {
+      "fetch_users": "Erreur lors de la récupération des utilisateurs : {{error}}",
+      "update_user": "Erreur lors de la mise à jour de l'utilisateur : {{error}}",
+      "delete_user": "Erreur lors de la suppression de l'utilisateur : {{error}}"
+    }
+  },
+  "chat": {
+    "contacts_title": "Contacts",
+    "welcome_message": "Bienvenue ! Sélectionnez un contact pour commencer à discuter.",
+    "chat_title": "Discussion avec {{name}}"
+  },
+  "errors": {
+    "get_admins_error": "Erreur lors de la récupération des administrateurs : {{error}}"
+  },
+  "welcome": {
+    "title": "Bienvenue, {{userName}} !",
+    "subtitle": "Veuillez sélectionner un utilisateur pour commencer à discuter."
+  },
+  "contacts": {
+    "brand_name": "PhishShield",
+    "current_user_name": "Votre compte : {{userName}}"
+  },
+  "chat_input": {
+    "placeholder": "Tapez votre message ici",
+    "emoji_button": "Ajouter un emoji",
+    "send_button": "Envoyer le message"
+  }
+}

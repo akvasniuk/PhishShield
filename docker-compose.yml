@@ -1,0 +1,41 @@
+version: "3"
+services:
+  ui:
+    build:
+      context: ./phishshield-ui
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./phishshield-api
+    ports:
+      - "3005:3005"
+    environment:
+      DB_CONNECTION_URL: "mongodb://mongo:27017/phishshield"
+      FASTAPI_CONNECTION_URL: "http://ml:8000"
+    networks:
+      - app-network
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    networks:
+      - app-network
+    ports:
+      - "27016:27017"
+
+  ml:
+    build:
+      context: ./phishshield-ml
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

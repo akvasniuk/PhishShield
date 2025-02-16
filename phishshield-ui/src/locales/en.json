@@ -1,0 +1,433 @@
+{
+  "profile": "Profile",
+  "subheader": "The information can be edited",
+  "first_name": "First name",
+  "last_name": "Last name",
+  "email_address": "Email address",
+  "save_details": "Save details",
+  "error_message": "Something went wrong!",
+  "success_message": "Details saved successfully!",
+  "is_required": "is required",
+  "account_info": {
+    "upload_avatar": "Upload avatar",
+    "save_avatar": "Save Avatar",
+    "only_images_allowed": "Only images are allowed",
+    "file_size_limit": "File size must be less than 1GB",
+    "selected_file": "Selected File",
+    "success_message": "Avatar updated successfully!",
+    "error_message": "Something went wrong!"
+  },
+  "delete_account": {
+    "manage_account": "Manage the account",
+    "account_title": "Account",
+    "delete_account": "Delete account",
+    "confirm_title": "Are you sure you want to delete your account?",
+    "confirm_message": "This action is irreversible. Once your account is deleted, all your data will be permanently removed.",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete_failed": "Failed to delete account"
+  },
+  "update_password": {
+    "password_title": "Password",
+    "password_subheader": "Update password",
+    "password_label": "Password",
+    "confirm_password_label": "Confirm password",
+    "password_required": "Password is required",
+    "password_stronger": "Password must be stronger",
+    "confirm_password_required": "Confirm password is required",
+    "passwords_must_match": "Passwords must match",
+    "update_button": "Update"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "user": "User",
+    "product": "Product",
+    "blog": "Blog",
+    "phishing_detection": "Phishing Detection",
+    "prediction_history": "Prediction History",
+    "comments": "Comments",
+    "sign_in": "Sign in",
+    "not_found": "Not found"
+  },
+  "layout": {
+    "info_alert": "This is an info Alert."
+  },
+  "dashboard": {
+    "info_alert": "This is an info Alert.",
+    "account": {
+      "home": "Home",
+      "profile": "Profile",
+      "settings": "Settings"
+    }
+  },
+  "searchbar": {
+    "placeholder": "Search…",
+    "button": "Search"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "unread_messages": "You have {{count}} unread message",
+    "unread_messages_plural": "You have {{count}} unread messages",
+    "mark_as_read": "Mark all as read",
+    "new": "New",
+    "before": "Before that",
+    "view_all": "View all"
+  },
+  "accountPopover": {
+    "logout": "Logout",
+    "menu": {
+      "home": "Home",
+      "profile": "Profile",
+      "settings": "Settings"
+    },
+    "placeholders": {
+      "loadingUser": "Loading user details..."
+    }
+  },
+  "authLayout": {
+    "alertMessage": "This is an info Alert."
+  },
+  "page": {
+    "account": {
+      "title": "{{appName}} Account"
+    },
+    "blog": {
+      "title": "Blog - {{appName}}"
+    },
+    "comments": {
+      "title": "{{appName}} Comments"
+    },
+    "notFound": {
+      "title": "404 page not found! | Error - {{appName}}"
+    },
+    "phishingDetection": {
+      "title": "Phishing Detection - {{appName}}"
+    },
+    "detectionHistory": {
+      "title": "Detection History - {{appName}}"
+    },
+    "products": {
+      "title": "Products - {{appName}}"
+    },
+    "accountSetting": {
+      "title": "{{appName}} Setting"
+    },
+    "chat": {
+      "title": "{{appName}} Chat"
+    },
+    "signIn": {
+      "title": "Sign in - {{appName}}"
+    },
+    "signUp": {
+      "title": "Sign up - {{appName}}"
+    },
+    "users": {
+      "title": "Users - {{appName}}"
+    }
+  },
+  "account": {
+    "title": "Account"
+  },
+  "setting": {
+    "title": "Settings"
+  },
+  "googleAuth": {
+    "loginFailed": "Login failed"
+  },
+  "signIn": {
+    "title": "Sign In",
+    "email": "Email Address",
+    "password": "Password",
+    "signInButton": "Sign In",
+    "forgotPassword": "Forgot password?",
+    "emailValidation": "Please enter a valid email address.",
+    "emailRequired": "Email address is required.",
+    "passwordRequired": "Password is required.",
+    "loginFailed": "Login failed. Please check your credentials.",
+    "noAccount": "Don't have an account?",
+    "getStarted": "Get started",
+    "or": "OR"
+  },
+  "signUp": {
+    "title": "Sign up",
+    "alreadyHaveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email address",
+    "password": "Password",
+    "uploadAvatar": "Upload avatar",
+    "selectedFile": "Selected File",
+    "passwordStrength": "Password Strength",
+    "captchaRequired": "Please complete the captcha",
+    "submitButton": "Sign up",
+    "successMessageRedirect": "After 30 seconds, you will be redirected",
+    "validation": {
+      "firstNameRequired": "First Name is required",
+      "lastNameRequired": "Last Name is required",
+      "emailInvalid": "Must be a valid email",
+      "emailRequired": "Email is required",
+      "passwordRequired": "Password is required",
+      "passwordStrength": "Password level must be good or above",
+      "avatarFileType": "Only images are allowed",
+      "avatarFileSize": "File size must be less than 1GB"
+    }
+  },
+  "repliesSection": {
+    "replyButton": "Reply",
+    "replyToUser": "Replying to",
+    "timeSuffix": "ago",
+    "createdNow": "Just now",
+    "error": "An error occurred. Please try again.",
+    "repliesTo": "Replies to"
+  },
+  "ownReply": {
+    "editPlaceholder": "Don't leave this blank!",
+    "error": "An error occurred while updating the reply."
+  },
+  "confirmDelete": {
+    "title": "Delete Comment",
+    "message": "Are you sure you want to delete this comment? This action cannot be undone.",
+    "cancelButton": "No, cancel",
+    "deleteButton": "Yes, delete"
+  },
+  "comment": {
+    "editPlaceholder": "Don't leave this blank!",
+    "updateButton": "Update Comment"
+  },
+  "addReply": {
+    "placeholder": "Add a reply",
+    "addButton": "Add Reply",
+    "avatarAlt": "User Avatar"
+  },
+  "core": {
+    "noComments": "No comments yet. Be the first to add one!",
+    "pagination": {
+      "firstPage": "First Page",
+      "lastPage": "Last Page"
+    }
+  },
+  "addComment": {
+    "placeholder": "Add a comment...",
+    "sendButton": "Send",
+    "avatarAlt": "User avatar"
+  },
+  "youTag": {
+    "label": "You"
+  },
+  "placeholders": {
+    "defaultComment": "Write a comment..."
+  },
+  "buttons": {
+    "delete": "Delete",
+    "edit": "Edit",
+    "reply": "Reply",
+    "replyIconAlt": "Reply icon",
+    "send": "Send",
+    "update": "Update"
+  },
+  "alerts": {
+    "deleteCommentWarning": "If you want to remove the comment text, just delete the comment.",
+    "replyPlaceholderAlert": "Please enter a reply before updating."
+  },
+  "notFound": {
+    "title": "Sorry, page not found!",
+    "description": "Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL? Be sure to check your spelling.",
+    "button": "Go to home",
+    "imageAlt": "404 Illustration"
+  },
+  "analytics": {
+    "visits": "visits"
+  },
+  "overview": {
+    "welcome": "Hi {{firstname}} {{lastname}}, Welcome back 👋",
+    "weeklyDetection": "Weekly detection",
+    "newUsers": "New users",
+    "weeklyPositiveDetection": "Weekly positive detection",
+    "weeklyNegativeDetection": "Weekly negative detection",
+    "predictionByType": "Current prediction by type",
+    "monthlyUsersAndPredictions": "Monthly Distribution of Users and Predictions",
+    "signUp": "Sign Up",
+    "signUpSite": "on the Site",
+    "signUpGoogle": "Google",
+    "users": "Users",
+    "predictions": "Predictions"
+  },
+  "months": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ],
+  "daysOfWeek": [
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat"
+  ],
+  "phishing": {
+    "title": "Phishing Detection",
+    "tabs": {
+      "url": "By URL",
+      "text": "By Text",
+      "file": "By File"
+    },
+    "fields": {
+      "url": "Enter URL",
+      "text": "Enter Text",
+      "file": "Upload File"
+    },
+    "errors": {
+      "invalidURL": "Invalid URL format",
+      "urlRequired": "URL is required",
+      "textRequired": "Text is required",
+      "textMinLength": "Text must be at least 10 characters",
+      "fileRequired": "File is required"
+    },
+    "submitButton": "Detect Phishing",
+    "detectionResults": "Detection Results",
+    "models": {
+      "votingModel": "Voting Model",
+      "xgboostModel": "XGBoost Model",
+      "logisticModel": "Logistic Regression",
+      "lstmModel": "LSTM Model",
+      "phishingURLModel": "Phishing URL Model"
+    },
+    "results": {
+      "safe": "Safe",
+      "phishing": "Phishing Detected"
+    },
+    "probability": "Probability"
+  },
+  "prediction": {
+    "legitimate": "Legitimate",
+    "phishing": "Phishing"
+  },
+  "dialog": {
+    "title": "Prediction Details",
+    "generalInformation": "General Information",
+    "data": "Data",
+    "type": "Type",
+    "createdAt": "Created At",
+    "modelPredictions": "Model Predictions",
+    "model": "Model",
+    "prediction": "Prediction",
+    "probability": "Probability",
+    "closeButton": "Close"
+  },
+  "toolbar": {
+    "selected": "{{count}} selected",
+    "filterBy": "Filter by {{field}}...",
+    "filterByData": "Filter by Data",
+    "filterByType": "Filter by Type",
+    "filterByModel": "Filter by Model"
+  },
+  "actions": {
+    "viewDetails": "View Details",
+    "delete": "Delete",
+    "filterList": "Filter list"
+  },
+  "predictionHistory": {
+    "title": "Prediction History"
+  },
+  "table": {
+    "noData": {
+      "title": "Not found",
+      "description": "No results found for \"{{searchQuery}}\".<br />Try checking for typos or using complete words.",
+      "defaultSearchQuery": "your query"
+    },
+    "headers": {
+      "result": "Result (Model, Prediction, Probability)",
+      "data": "Data",
+      "type": "Type",
+      "createdAt": "Created At"
+    }
+  },
+  "default": {
+    "searchQuery": "your query"
+  },
+  "error": {
+    "fetchingPredictions": "Failed to fetch prediction data."
+  },
+  "UserTableToolbar": {
+    "delete": "Delete",
+    "filter_list": "Filter list",
+    "filter_by": "Filter by",
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "email": "Email",
+    "selected": "{{count}} selected"
+  },
+  "UserTableRow": {
+    "edit_user": "Edit User",
+    "delete_confirmation": "Delete Confirmation",
+    "delete_prompt": "Are you sure you want to delete `{firstname} {lastname}`?",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "role": "Role",
+    "verified": "Verified",
+    "not_verified": "Not Verified",
+    "email": "Email",
+    "google_auth": "Google Authentication",
+    "is_verified": "Is Verified"
+  },
+  "TableNoData": {
+    "not_found": "Not found",
+    "no_results_found": "No results found for",
+    "hint": "Try checking for typos or using complete words."
+  },
+  "UserView": {
+    "users": {
+      "title": "Users",
+      "search_placeholder": "Search for users...",
+      "table_headers": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "verified": "Verified",
+        "google_auth": "Google Auth"
+      }
+    },
+    "errors": {
+      "fetch_users": "Error fetching users: {{error}}",
+      "update_user": "Error updating user: {{error}}",
+      "delete_user": "Error deleting user: {{error}}"
+    }
+  },
+  "chat": {
+    "contacts_title": "Contacts",
+    "welcome_message": "Welcome! Select a contact to start chatting.",
+    "chat_title": "Chat with {{name}}"
+  },
+  "errors": {
+    "get_admins_error": "Error fetching admins: {{error}}"
+  },
+  "welcome": {
+    "title": "Welcome, {{userName}}!",
+    "subtitle": "Please select a user to start messaging."
+  },
+  "contacts": {
+    "brand_name": "PhishShield",
+    "current_user_name": "Your Account: {{userName}}"
+  },
+  "chat_input": {
+    "placeholder": "Type your message here",
+    "emoji_button": "Add emoji",
+    "send_button": "Send message"
+  }
+}

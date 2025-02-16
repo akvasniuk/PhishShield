@@ -1,0 +1,28 @@
+module.exports = {
+  PORT: process.env.PORT || 3000,
+  DB_URL: process.env.DB_CONNECTION_URL || 'mongodb://localhost:27017/phish',
+  ACCESS_TOKEN_SECRET: process.env.ACCESS_TOKEN_SECRET || 'SECRET TOKEN',
+  REFRESH_TOKEN_SECRET: process.env.REFRESH_TOKEN_SECRET || 'SECRET TOKEN SECRET',
+  EMAIL_TOKEN_SECRET: process.env.EMAIL_TOKEN_SECRET || 'SECRET EMAIL TOKEN',
+  PASSWORD_TOKEN_SECRET: process.env.PASSWORD_TOKEN_SECRET || 'SECRET PASSWORD TOKEN',
+  AUTHORIZATION: 'Authorization',
+  ACCESS: 'access',
+  REFRESH: 'refresh',
+  ACCESS_TOKEN_TIME: '30m',
+  REFRESH_TOKEN_TIME: '1d',
+  EMAIL_TOKEN_TIME: '7d',
+  PASSWORD_TOKEN_TIME: '30m',
+  SYSTEM_EMAIL: process.env.SYSTEM_EMAIL || '12@gmail.com',
+  SYSTEM_EMAIL_PASSWORD: process.env.SYSTEM_EMAIL_PASSWORD || '123456user',
+  LOCALHOST_URL: 'http://localhost:3001',
+  GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID || '123',
+  FRONT_CONNECTION_URL: process.env.FRONT_CONNECTION_URL,
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+  FASTAPI_CONNECTION_URL: process.env.FASTAPI_CONNECTION_URL,
+  ASSISTANT_API_ID: process.env.ASSISTANT_API_ID,
+  PHISHING_PREDICT_API: {
+    BY_TEXT: process.env.FASTAPI_CONNECTION_URL + "/predict/text",
+    BY_URL: process.env.FASTAPI_CONNECTION_URL + "/predict/url",
+  },
+  FILE_API_KEY: process.env.FILE_API_KEY
+};

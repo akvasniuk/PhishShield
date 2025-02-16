@@ -1,0 +1,416 @@
+{
+  "profile": "Profil",
+  "subheader": "Die Informationen können bearbeitet werden",
+  "first_name": "Vorname",
+  "last_name": "Nachname",
+  "email_address": "E-Mail-Adresse",
+  "save_details": "Details speichern",
+  "error_message": "Etwas ist schief gelaufen!",
+  "success_message": "Details erfolgreich gespeichert!",
+  "is_required": "ist erforderlich",
+  "account_info": {
+    "upload_avatar": "Avatar hochladen",
+    "save_avatar": "Avatar speichern",
+    "only_images_allowed": "Nur Bilder sind erlaubt",
+    "file_size_limit": "Die Dateigröße muss unter 1GB liegen",
+    "selected_file": "Ausgewählte Datei",
+    "success_message": "Avatar erfolgreich aktualisiert!",
+    "error_message": "Etwas ist schiefgelaufen!"
+  },
+  "delete_account": {
+    "manage_account": "Konto verwalten",
+    "account_title": "Konto",
+    "delete_account": "Konto löschen",
+    "confirm_title": "Sind Sie sicher, dass Sie Ihr Konto löschen möchten?",
+    "confirm_message": "Diese Aktion ist unwiderruflich. Sobald Ihr Konto gelöscht wird, werden alle Ihre Daten dauerhaft entfernt.",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "delete_failed": "Konto konnte nicht gelöscht werden"
+  },
+  "update_password": {
+    "password_title": "Passwort",
+    "password_subheader": "Passwort aktualisieren",
+    "password_label": "Passwort",
+    "confirm_password_label": "Passwort bestätigen",
+    "password_required": "Passwort ist erforderlich",
+    "password_stronger": "Das Passwort muss stärker sein",
+    "confirm_password_required": "Passwortbestätigung ist erforderlich",
+    "passwords_must_match": "Passwörter müssen übereinstimmen",
+    "update_button": "Aktualisieren"
+  },
+  "nav": {
+    "dashboard": "Instrumententafel",
+    "user": "Benutzer",
+    "product": "Produkt",
+    "blog": "Blog",
+    "phishing_detection": "Phishing-Erkennung",
+    "prediction_history": "Vorhersageverlauf",
+    "comments": "Kommentare",
+    "sign_in": "Anmelden",
+    "not_found": "Nicht gefunden"
+  },
+  "layout": {
+    "info_alert": "Dies ist eine Info-Warnung."
+  },
+  "dashboard": {
+    "info_alert": "Dies ist eine Info-Warnung.",
+    "account": {
+      "home": "Startseite",
+      "profile": "Profil",
+      "settings": "Einstellungen"
+    }
+},
+  "searchbar": {
+    "placeholder": "Suchen…",
+    "button": "Suchen"
+  },
+
+  "notifications": {
+    "title": "Benachrichtigungen",
+    "unread_messages": "Sie haben {{count}} ungelesene Nachricht",
+    "unread_messages_plural": "Sie haben {{count}} ungelesene Nachrichten",
+    "mark_as_read": "Alle als gelesen markieren",
+    "new": "Neu",
+    "before": "Davor",
+    "view_all": "Alle ansehen"
+  },
+  "accountPopover": {
+    "logout": "Abmelden",
+    "menu": {
+      "home": "Startseite",
+      "profile": "Profil",
+      "settings": "Einstellungen"
+    },
+    "placeholders": {
+      "loadingUser": "Benutzerdetails werden geladen..."
+    }
+},
+  "authLayout": {
+    "alertMessage": "Dies ist eine Informationsmeldung."
+  },
+
+  "page": {
+    "account": {
+      "title": "{{appName}} Konto"
+    },
+    "blog": {
+      "title": "Blog - {{appName}}"
+    },
+    "comments": {
+      "title": "{{appName}} Kommentare"
+    },
+    "notFound": {
+      "title": "404 Seite nicht gefunden! | Fehler - {{appName}}"
+    },
+    "phishingDetection": {
+      "title": "Phishing-Erkennung - {{appName}}"
+    },
+    "detectionHistory": {
+      "title": "Erkennungshistorie - {{appName}}"
+    },
+    "products": {
+      "title": "Produkte - {{appName}}"
+    },
+    "accountSetting": {
+      "title": "{{appName}} Einstellung"
+    },
+    "signIn": {
+      "title": "Anmelden - {{appName}}"
+    },
+    "signUp": {
+      "title": "Registrieren - {{appName}}"
+    },
+    "users": {
+      "title": "Benutzer - {{appName}}"
+    }
+  },
+  "account": {
+    "title": "Konto"
+  },
+  "setting": {
+    "title": "Einstellungen"
+  },
+  "googleAuth": {
+    "loginFailed": "Anmeldung fehlgeschlagen"
+  },
+  "signIn": {
+    "title": "Anmelden",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "signInButton": "Anmelden",
+    "forgotPassword": "Passwort vergessen?",
+    "emailValidation": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "emailRequired": "Die E-Mail-Adresse ist erforderlich.",
+    "passwordRequired": "Das Passwort ist erforderlich.",
+    "loginFailed": "Anmeldung fehlgeschlagen. Bitte überprüfen Sie Ihre Zugangsdaten.",
+    "noAccount": "Haben Sie noch kein Konto?",
+    "getStarted": "Jetzt registrieren",
+    "or": "ODER"
+  },
+  "signUp": {
+    "title": "Registrieren",
+    "alreadyHaveAccount": "Haben Sie schon ein Konto?",
+    "signIn": "Einloggen",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "uploadAvatar": "Avatar hochladen",
+    "selectedFile": "Ausgewählte Datei",
+    "passwordStrength": "Passwortstärke",
+    "captchaRequired": "Bitte füllen Sie das Captcha aus",
+    "submitButton": "Registrieren",
+    "successMessageRedirect": "In 30 Sekunden werden Sie weitergeleitet",
+    "validation": {
+      "firstNameRequired": "Der Vorname ist erforderlich",
+      "lastNameRequired": "Der Nachname ist erforderlich",
+      "emailInvalid": "Muss eine gültige E-Mail-Adresse sein",
+      "emailRequired": "Die E-Mail-Adresse ist erforderlich",
+      "passwordRequired": "Das Passwort ist erforderlich",
+      "passwordStrength": "Das Passwortniveau muss gut oder höher sein",
+      "avatarFileType": "Nur Bilder sind erlaubt",
+      "avatarFileSize": "Die Dateigröße muss weniger als 1 GB betragen"
+    }
+  },
+  "repliesSection": {
+    "replyButton": "Antworten",
+    "replyToUser": "Antwort an",
+    "timeSuffix": "vor",
+    "createdNow": "Gerade eben",
+    "repliesTo": "Antwortet auf",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuche es erneut."
+  },
+  "ownReply": {
+    "editPlaceholder": "Lassen Sie dieses Feld nicht leer!",
+    "error": "Beim Aktualisieren der Antwort ist ein Fehler aufgetreten."
+  },
+  "confirmDelete": {
+    "title": "Kommentar löschen",
+    "message": "Sind Sie sicher, dass Sie diesen Kommentar löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "cancelButton": "Nein, abbrechen",
+    "deleteButton": "Ja, löschen"
+  },
+  "comment": {
+    "editPlaceholder": "Lassen Sie dieses Feld nicht leer!",
+    "updateButton": "Kommentar aktualisieren"
+  },
+  "addReply": {
+    "placeholder": "Antwort hinzufügen",
+    "addButton": "Antwort hinzufügen",
+    "avatarAlt": "Benutzeravatar"
+  },
+  "core": {
+    "noComments": "Noch keine Kommentare. Fügen Sie den ersten hinzu!",
+    "pagination": {
+      "firstPage": "Erste Seite",
+      "lastPage": "Letzte Seite"
+    }
+  },
+  "addComment": {
+    "placeholder": "Einen Kommentar hinzufügen...",
+    "sendButton": "Senden",
+    "avatarAlt": "Benutzeravatar"
+  },
+  "youTag": {
+    "label": "Du"
+  },
+  "placeholders": {
+    "defaultComment": "Schreiben Sie einen Kommentar..."
+  },
+  "buttons": {
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "reply": "Antworten",
+    "replyIconAlt": "Antwortsymbol",
+    "send": "Senden",
+    "update": "Aktualisieren"
+
+  },
+  "alerts": {
+    "deleteCommentWarning": "Wenn Sie den Kommentartext entfernen möchten, löschen Sie einfach den Kommentar.",
+    "replyPlaceholderAlert": "Bitte geben Sie eine Antwort ein, bevor Sie aktualisieren."
+  },
+  "notFound": {
+    "title": "Désolé, page introuvable !",
+    "description": "Désolé, nous n'avons pas pu trouver la page que vous recherchez. Peut-être avez-vous mal tapé l'URL ? Assurez-vous de vérifier votre orthographe.",
+    "button": "Retour à l'accueil",
+    "imageAlt": "Illustration 404"
+  },
+  "analytics": {
+    "visits": "Besuche"
+  },
+  "overview": {
+    "welcome": "Hallo {{firstname}} {{lastname}}, Willkommen zurück 👋",
+    "weeklyDetection": "Wöchentliche Erkennung",
+    "newUsers": "Neue Nutzer",
+    "weeklyPositiveDetection": "Wöchentliche positive Erkennung",
+    "weeklyNegativeDetection": "Wöchentliche negative Erkennung",
+    "predictionByType": "Aktuelle Vorhersage nach Typ",
+    "monthlyUsersAndPredictions": "Monatliche Verteilung von Nutzern und Vorhersagen",
+    "signUp": "Anmeldung",
+    "signUpSite": "auf der Webseite",
+    "signUpGoogle": "Google",
+    "users": "Nutzer",
+    "predictions": "Vorhersagen"
+  },
+  "months": [
+    "Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"
+  ],
+  "daysOfWeek": [
+    "So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"
+  ],
+  "phishing": {
+    "title": "Phishing-Erkennung",
+    "tabs": {
+      "url": "Nach URL",
+      "text": "Nach Text",
+      "file": "Nach Datei"
+    },
+    "fields": {
+      "url": "URL eingeben",
+      "text": "Text eingeben",
+      "file": "Datei hochladen"
+    },
+    "errors": {
+      "invalidURL": "Ungültiges URL-Format",
+      "urlRequired": "URL ist erforderlich",
+      "textRequired": "Text ist erforderlich",
+      "textMinLength": "Text muss mindestens 10 Zeichen enthalten",
+      "fileRequired": "Datei ist erforderlich"
+    },
+    "submitButton": "Phishing erkennen",
+    "detectionResults": "Erkennungsergebnisse",
+    "models": {
+      "votingModel": "Voting-Modell",
+      "xgboostModel": "XGBoost-Modell",
+      "logisticModel": "Logistische Regression",
+      "lstmModel": "LSTM-Modell",
+      "phishingURLModel": "Phishing-URL-Modell"
+    },
+    "results": {
+      "safe": "Sicher",
+      "phishing": "Phishing erkannt"
+    },
+    "probability": "Wahrscheinlichkeit"
+  },
+  "prediction": {
+    "legitimate": "Legitim",
+    "phishing": "Phishing"
+  },
+  "dialog": {
+    "title": "Prognosedetails",
+    "generalInformation": "Allgemeine Informationen",
+    "data": "Daten",
+    "type": "Typ",
+    "createdAt": "Erstellt am",
+    "modelPredictions": "Modellvorhersagen",
+    "model": "Modell",
+    "prediction": "Vorhersage",
+    "probability": "Wahrscheinlichkeit",
+    "closeButton": "Schließen"
+  },
+  "toolbar": {
+    "selected": "{{count}} ausgewählt",
+    "filterBy": "Filtern nach {{field}}...",
+    "filterByData": "Filtern nach Daten",
+    "filterByType": "Filtern nach Typ",
+    "filterByModel": "Filtern nach Modell"
+  },
+  "actions": {
+    "delete": "Löschen",
+    "filterList": "Liste filtern",
+    "viewDetails": "Details anzeigen"
+  },
+  "predictionHistory": {
+    "title": "Prognoseverlauf"
+  },
+  "table": {
+    "noData": {
+      "title": "Nicht gefunden",
+      "description": "Keine Ergebnisse gefunden für \"{{searchQuery}}\".<br />Versuchen Sie, Tippfehler zu überprüfen oder vollständige Wörter zu verwenden.",
+      "defaultSearchQuery": "Ihre Anfrage"
+    },
+    "headers": {
+      "result": "Ergebnis (Modell, Prognose, Wahrscheinlichkeit)",
+      "data": "Daten",
+      "type": "Typ",
+      "createdAt": "Erstellt am"
+    }
+  },
+  "default": {
+    "searchQuery": "Ihre Anfrage"
+  },
+  "error": {
+    "fetchingPredictions": "Vorhersagedaten konnten nicht abgerufen werden."
+  },
+  "UserTableToolbar": {
+    "delete": "Löschen",
+    "filter_list": "Liste filtern",
+    "filter_by": "Filtern nach",
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "email": "E-Mail",
+    "selected": "{{count}} ausgewählt"
+  },
+  "UserTableRow": {
+    "edit_user": "Benutzer bearbeiten",
+    "delete_confirmation": "Löschbestätigung",
+    "delete_prompt": "Möchten Sie `{firstname} {lastname}` wirklich löschen?",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "role": "Rolle",
+    "verified": "Verifiziert",
+    "not_verified": "Nicht verifiziert",
+    "email": "E-Mail",
+    "google_auth": "Google-Authentifizierung",
+    "is_verified": "Ist verifiziert"
+  },
+  "TableNoData": {
+    "not_found": "Nicht gefunden",
+    "no_results_found": "Keine Ergebnisse gefunden für",
+    "hint": "Überprüfen Sie Schreibfehler oder verwenden Sie vollständige Wörter."
+  },
+  "UserView": {
+  "users": {
+    "title": "Benutzer",
+    "search_placeholder": "Nach Benutzern suchen...",
+    "table_headers": {
+      "name": "Name",
+      "email": "E-Mail",
+      "role": "Rolle",
+      "verified": "Verifiziert",
+      "google_auth": "Google Auth"
+    }
+  },
+  "errors": {
+    "fetch_users": "Fehler beim Abrufen der Benutzer: {{error}}",
+    "update_user": "Fehler beim Aktualisieren des Benutzers: {{error}}",
+    "delete_user": "Fehler beim Löschen des Benutzers: {{error}}"
+  }
+  },
+  "chat": {
+    "contacts_title": "Kontakte",
+    "welcome_message": "Willkommen! Wählen Sie einen Kontakt aus, um zu chatten.",
+    "chat_title": "Chat mit {{name}}"
+  },
+  "errors": {
+    "get_admins_error": "Fehler beim Abrufen der Administratoren: {{error}}"
+  },
+  "welcome": {
+    "title": "Willkommen, {{userName}}!",
+    "subtitle": "Bitte wählen Sie einen Benutzer aus, um mit dem Chat zu beginnen."
+  },
+  "contacts": {
+    "brand_name": "PhishShield",
+    "current_user_name": "Ihr Konto: {{userName}}"
+  },
+  "chat_input": {
+    "placeholder": "Geben Sie hier Ihre Nachricht ein",
+    "emoji_button": "Emoji hinzufügen",
+    "send_button": "Nachricht senden"
+  }
+}
