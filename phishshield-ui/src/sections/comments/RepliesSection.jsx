@@ -36,7 +36,6 @@ const RepliesSection = ({
             const response = await commentService.createReplyComment(authUser._id, id, payload);
             replyMessage = response.data;
 
-            // Add the new reply object
             const replyObj = {
                 _id: replyMessage.replies[replyMessage.replies.length - 1]._id,
                 commentId: replyMessage._id,

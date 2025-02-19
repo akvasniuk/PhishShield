@@ -1,5 +1,5 @@
 const {chatController} = require("../controllers");
-const {authMiddleware} = require("../middlewars");
+const {authMiddleware} = require("../middleware");
 const router = require('express').Router();
 
 router.post('/getMessages/:userId',

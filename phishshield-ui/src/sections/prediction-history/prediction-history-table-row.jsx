@@ -16,9 +16,27 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import { useTranslation } from "react-i18next";
 import { Iconify } from "../../components/iconify/index.js";
+import { de, enUS, fr, uk } from 'date-fns/locale';
+import { formatDistanceToNow } from 'date-fns';
 
 export function PredictionHistoryTableRow({ row, selected, onSelectRow }) {
     const { t } = useTranslation();
+
+    const { i18n } = useTranslation();
+
+    const localeMap = {
+        en: enUS,
+        fr: fr,
+        de: de,
+        uk: uk,
+    };
+
+    const currentLocale = localeMap[i18n.language] || enUS;
+
+    const formatTimestamp = (timestamp = new Date()) => {
+        const parsedDate = new Date(timestamp);
+        return formatDistanceToNow(parsedDate, { addSuffix: true, locale: currentLocale });
+    };
 
     const [openPopover, setOpenPopover] = useState(null);
     const [openDialog, setOpenDialog] = useState(false);
@@ -59,7 +77,7 @@ export function PredictionHistoryTableRow({ row, selected, onSelectRow }) {
                     {row.data.length > 60 ? `${row.data.slice(0, 60)}...` : row.data}
                 </TableCell>
                 <TableCell>{row.type}</TableCell>
-                <TableCell>{new Date(row.createdAt).toLocaleString()}</TableCell>
+                <TableCell>{formatTimestamp(row.createdAt)}</TableCell>
                 <TableCell align="right">
                     <IconButton onClick={handleOpenPopover}>
                         <Iconify icon="eva:more-vertical-fill" />
@@ -103,7 +121,7 @@ export function PredictionHistoryTableRow({ row, selected, onSelectRow }) {
                         </Typography>
                         <Typography variant="subtitle1">
                             <strong>{t("dialog.createdAt")}: </strong>{" "}
-                            {new Date(row.createdAt).toLocaleString()}
+                            {formatTimestamp(row.createdAt)}
                         </Typography>
                     </Box>
 

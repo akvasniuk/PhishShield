@@ -1,25 +1,11 @@
 const {statusCode, successfulMessage} = require('../constants');
-const {OAuth} = require('../database');
-const {authHelper, passwordHelper} = require('../helpers');
-const {userHelper} = require('../helpers');
-const {mailService, userService} = require('../services');
-const {
-    emailActionsEnum: {WELCOME},
-    emailActionImage: {REGISTER_IMAGE}
-} = require('../constants');
+const {authService } = require('../services');
 
 module.exports = {
     login: async (req, res, next) => {
         try {
-            const {_id} = req.user;
-
-            const tokenPair = authHelper.generateTokenPair();
-
-            await OAuth.updateOne({user: _id}, {...tokenPair});
-
-            const normalizedUser = userHelper.userNormalizator(req.user.toJSON());
-
-            res.status(statusCode.UPDATED).json({...tokenPair, user: normalizedUser});
+            const user = await authService.login(req.user);
+            res.status(statusCode.UPDATED).json(user);
         } catch (e) {
             next(e);
         }
@@ -27,28 +13,8 @@ module.exports = {
 
     loginGoogle: async (req, res, next) => {
         try {
-            const {userInfo} = req;
-
-            const user = {
-                firstname: userInfo?.given_name,
-                lastname: userInfo?.family_name,
-                email: userInfo?.email,
-                isUserActivated: true,
-                avatar: userInfo?.picture,
-                isGoogleAuth: true
-            }
-
-            const hashedPassword = await passwordHelper.hash(userInfo?.picture);
-            const insertedUser = await userService.insertUser({...user, password: hashedPassword});
-            await OAuth.create({user: insertedUser._id});
-
-            const tokenPair = authHelper.generateTokenPair();
-
-            await OAuth.updateOne({user: insertedUser._id}, {...tokenPair});
-
-            const normalizedUser = userHelper.userNormalizator(insertedUser.toJSON());
-
-            res.status(statusCode.UPDATED).json({...tokenPair, user: normalizedUser});
+            const user = await authService.loginGoogle(req.userInfo);
+            res.status(statusCode.UPDATED).json(user);
         } catch (e) {
             next(e);
         }
@@ -56,13 +22,7 @@ module.exports = {
 
     logout: async (req, res, next) => {
         try {
-            const {accessToken} = req.user;
-            const {userId} = req.params;
-
-            await OAuth.deleteOne({accessToken});
-
-            onlineUsers.delete(userId);
-
+            await authService.logout(req.user.accessToken, req.params.userId);
             res.status(statusCode.DELETED).json(successfulMessage.SUCCESSFUL_LOGOUT);
         } catch (e) {
             next(e);
@@ -71,14 +31,8 @@ module.exports = {
 
     refresh: async (req, res, next) => {
         try {
-            const {user: {_id}, refreshToken, user} = req.user;
-
-            const tokenPair = authHelper.generateTokenPair();
-
-            await OAuth.remove({refreshToken});
-            await OAuth.create({...tokenPair, user: _id});
-
-            res.status(statusCode.UPDATED).json({...tokenPair, user});
+            const user = await authService.refresh(req.user, req.user.refreshToken);
+            res.status(statusCode.UPDATED).json(user);
         } catch (e) {
             next(e);
         }
@@ -86,11 +40,7 @@ module.exports = {
 
     activate: async (req, res, next) => {
         try {
-            const {email, name, _id} = req.user;
-
-            await userService.updateUser({_id}, {isUserActivated: true});
-            await mailService.sendMail(email, WELCOME, {userName: name, img: REGISTER_IMAGE});
-
+            await authService.activate(req.user);
             res.status(statusCode.UPDATED).json(successfulMessage.ACCOUNT_SUCCESSFUL_ACTIVATED);
         } catch (e) {
             next(e);
@@ -100,7 +50,6 @@ module.exports = {
     changePassword: (req, res, next) => {
         try {
             const {tokenObject: {passwordToken}} = req;
-
             res.status(statusCode.UPDATED).json({changeTokenPassword: passwordToken});
         } catch (e) {
             next(e);

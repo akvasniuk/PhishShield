@@ -1,8 +1,7 @@
 const {ErrorHandler, errorMessage} = require('../error');
 const {statusCode} = require('../constants');
-const {userService, commentService} = require('../services');
-const {userValidator, urlValidator, commentValidator} = require('../validators');
-const {userHelper} = require('../helpers');
+const {commentValidator} = require('../validators');
+const { commentRepository } = require('../repositories');
 
 module.exports = {
 
@@ -55,7 +54,7 @@ module.exports = {
     isCommentExists: async (req, res, next) => {
         try {
             const {commentId} = req.params;
-            const comment = await commentService.findComment({_id: commentId});
+            const comment = await commentRepository.findComment({_id: commentId});
 
             if (!comment) {
                 throw new ErrorHandler(statusCode.BAD_REQUEST,
@@ -93,7 +92,7 @@ module.exports = {
         try {
             const {commentId} = req.params;
             const {user} = req;
-            const comment = await commentService.findComment({_id: commentId});
+            const comment = await commentRepository.findComment({_id: commentId});
 
             if (!comment.userId.equals(user._id)) {
                 throw new ErrorHandler(statusCode.BAD_REQUEST,

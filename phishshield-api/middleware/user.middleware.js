@@ -1,14 +1,14 @@
 const { ErrorHandler, errorMessage } = require('../error');
 const { statusCode } = require('../constants');
-const { userService } = require('../services');
 const { userValidator, urlValidator } = require('../validators');
 const { userHelper } = require('../helpers');
+const { userRepository } = require('../repositories');
 
 module.exports = {
   isUserRegister: async (req, res, next) => {
     try {
       const { email } = req.body;
-      const userByEmail = await userService.findUserByEmail(email);
+      const userByEmail = await userRepository.findUserByEmail(email);
 
       if (userByEmail) {
         throw new ErrorHandler(statusCode.BAD_REQUEST, errorMessage.USER_IS_REGISTER.message, errorMessage.USER_IS_REGISTER.code);
@@ -22,7 +22,7 @@ module.exports = {
   isUserAdmin: async (req, res, next) => {
     try {
       const { user } = req;
-      const userById = await userService.findUser({_id: user._id});
+      const userById = await userRepository.findUser({_id: user._id});
 
       if (userById.role !== 'ADMIN') {
         throw new ErrorHandler(statusCode.BAD_REQUEST, errorMessage.USER_MUST_BE_ADMIN.message
@@ -49,7 +49,7 @@ module.exports = {
         );
       }
 
-      const userById = await userService.findUser({ _id: userId }).lean();
+      const userById = await userRepository.findUser({ _id: userId }).lean();
 
       if (!userById) {
         throw new ErrorHandler(statusCode.BAD_REQUEST, errorMessage.USER_NOT_EXISTS.message, errorMessage.USER_NOT_EXISTS.code);

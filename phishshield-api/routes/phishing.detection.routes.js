@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-const {commentController, diseaseController, phishingDetectionController} = require('../controllers');
-const {userMiddleware, authMiddleware, commentMiddleware, fileMiddleware, phishingDetectionMiddleware} = require("../middlewars");
+const {phishingDetectionController} = require('../controllers');
+const {authMiddleware, fileMiddleware, phishingDetectionMiddleware} = require("../middleware");
 
 router.post("",
     authMiddleware.checkAccessToken,

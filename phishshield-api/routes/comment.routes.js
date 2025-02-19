@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 const {commentController} = require('../controllers');
-const {userMiddleware, authMiddleware, commentMiddleware} = require("../middlewars");
+const {userMiddleware, authMiddleware, commentMiddleware} = require("../middleware");
 
 router.get('/', commentController.getComments);
 

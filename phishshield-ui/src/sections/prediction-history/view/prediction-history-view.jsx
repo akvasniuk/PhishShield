@@ -12,12 +12,10 @@ import { DashboardContent } from "../../../layouts/dashboard";
 import { Scrollbar } from "../../../components/scrollbar";
 import { TableNoData } from "../table-no-data";
 import { PredictionHistoryTableHead } from "../prediction-history-table-head.jsx";
-import { TableEmptyRows } from "../table-empty-rows";
 import { PredictionHistoryTableToolbar } from "../prediction-history-table-toolbar.jsx";
 import { PredictionHistoryTableRow } from "../prediction-history-table-row.jsx";
 import {
     applyFilter,
-    emptyRows,
     getComparator,
 } from "../utils";
 import { phishingDetectionService } from "../../../services/index.js";
@@ -95,6 +93,7 @@ export function PredictionHistoryView() {
                 );
                 setPredictions(response.data.phishingItems);
                 setTotalCount(response.data.totalCount);
+                console.log(predictions);
             } catch (error) {
                 console.error(t("error.fetchingPredictions"), error);
             }
@@ -158,11 +157,6 @@ export function PredictionHistoryView() {
                                         onSelectRow={() => onSelectRow(row._id)}
                                     />
                                 ))}
-
-                                <TableEmptyRows
-                                    height={68}
-                                    emptyRows={emptyRows(page, rowsPerPage, predictions.length)}
-                                />
 
                                 {notFound && <TableNoData searchQuery={filterData || t("default.searchQuery")} />}
                             </TableBody>

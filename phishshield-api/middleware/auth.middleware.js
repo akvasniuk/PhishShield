@@ -2,10 +2,10 @@ const {statusCode, constants: {AUTHORIZATION, REFRESH}, successfulMessage} = req
 const {OAuth} = require('../database');
 const {ErrorHandler, errorMessage} = require('../error');
 const {passwordHelper, authHelper, userHelper} = require('../helpers');
-const {userService} = require('../services');
 const {authValidator} = require('../validators');
 const {OAuth2Client} = require('google-auth-library');
 const {GOOGLE_CLIENT_ID} = require("../constants/constants");
+const { userRepository } = require('../repositories');
 
 
 const client = new OAuth2Client(GOOGLE_CLIENT_ID);
@@ -49,7 +49,7 @@ module.exports = {
                 audience: clientId
             }).then(response => response.getPayload());
 
-            const userByEmail = await userService.findUserByEmail(userInfo.email);
+            const userByEmail = await userRepository.findUserByEmail(userInfo.email);
 
             if(userByEmail){
                 const {_id} = userByEmail;
@@ -73,7 +73,7 @@ module.exports = {
     checkIsUserExist: async (req, res, next) => {
         try {
             const {email} = req.body;
-            const user = await userService.findUserByEmail(email).select('+password');
+            const user = await userRepository.findUserByEmail(email).select('+password');
 
             if (!user) {
                 throw new ErrorHandler(statusCode.BAD_REQUEST, errorMessage.USER_NOT_EXISTS.message, errorMessage.USER_NOT_EXISTS.code);

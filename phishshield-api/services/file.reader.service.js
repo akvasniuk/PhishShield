@@ -1,8 +1,8 @@
 const fs = require('fs-extra');
 const pdfParse = require('pdf-parse');
-const mammoth = require('mammoth'); // Для DOCX
+const mammoth = require('mammoth');
 const xlsx = require('xlsx');
-const {fromBufferWithMime} = require("textract");       // Для XLS/XLSX
+const {fromBufferWithMime} = require("textract");
 
 async function readFileByMimeType(file) {
     const {mimetype, data} = file;
@@ -64,7 +64,7 @@ function readXlsx(buffer) {
     const workbook = xlsx.read(buffer, {type: 'buffer'});
     const firstSheetName = workbook.SheetNames[0];
     const worksheet = workbook.Sheets[firstSheetName];
-    return xlsx.utils.sheet_to_csv(worksheet); // Повертає CSV-формат
+    return xlsx.utils.sheet_to_csv(worksheet);
 }
 
 module.exports = {

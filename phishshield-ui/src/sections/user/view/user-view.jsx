@@ -15,9 +15,8 @@ import { Scrollbar } from '../../../components/scrollbar';
 import { TableNoData } from '../table-no-data';
 import { UserTableRow } from '../user-table-row';
 import { UserTableHead } from '../user-table-head';
-import { TableEmptyRows } from '../table-empty-rows';
 import { UserTableToolbar } from '../user-table-toolbar';
-import { applyFilter, emptyRows, getComparator } from '../utils';
+import { applyFilter, getComparator } from '../utils';
 import { userService } from "../../../services/index.js";
 
 import { useTranslation } from 'react-i18next';
@@ -178,12 +177,6 @@ export function UserView() {
                           onDeleteUser={handleDeleteUser}
                       />
                   ))}
-
-                  <TableEmptyRows
-                      height={68}
-                      emptyRows={emptyRows(page, rowsPerPage, users.length)}
-                  />
-
                   {notFound && <TableNoData searchQuery={filterFirstName || t("UserView.users.search_placeholder")} />}
                 </TableBody>
               </Table>

@@ -1,8 +1,6 @@
 const { ErrorHandler, errorMessage } = require('../error');
 const { statusCode } = require('../constants');
-const { userService } = require('../services');
-const { userValidator, urlValidator, phishingDetectionValidator} = require('../validators');
-const { userHelper } = require('../helpers');
+const { phishingDetectionValidator} = require('../validators');
 
 module.exports = {
     isTypeExists: async (req, res, next) => {

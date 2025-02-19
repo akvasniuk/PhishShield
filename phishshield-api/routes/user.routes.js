@@ -5,7 +5,7 @@ const {
     userMiddleware,
     authMiddleware,
     fileMiddleware
-} = require('../middlewars');
+} = require('../middleware');
 
 router.get('/',
     authMiddleware.checkAccessToken,
