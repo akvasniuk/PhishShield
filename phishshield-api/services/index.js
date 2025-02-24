@@ -6,3 +6,4 @@ module.exports.phishingDetectionService = require('./phishing.detection.service'
 module.exports.authService = require('./auth.service');
 module.exports.chatService = require('./chat.service');
 module.exports.statisticsService = require('./statistics.service');
+module.exports.scraperService = require('./scraper.service');

@@ -31,6 +31,7 @@
     "openai": "^4.82.0",
     "pdf-parse": "^1.1.1",
     "pug": "^3.0.3",
+    "puppeteer": "^24.2.1",
     "socket.io": "^4.8.1",
     "textract": "^2.5.0",
     "uuid": "^11.0.5",

@@ -32,7 +32,11 @@ const phishingDetectionSchema = new Schema({
     },
     file: {
         type: String
-    }
+    },
+    image: {
+        type: String
+    },
+
 }, {timestamps: true});
 
 phishingDetectionSchema.pre('find', function () {

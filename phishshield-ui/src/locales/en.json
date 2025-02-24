@@ -281,7 +281,8 @@
     "tabs": {
       "url": "By URL",
       "text": "By Text",
-      "file": "By File"
+      "file": "By File",
+      "audio": "By Audio"
     },
     "fields": {
       "url": "Enter URL",
@@ -324,7 +325,8 @@
     "model": "Model",
     "prediction": "Prediction",
     "probability": "Probability",
-    "closeButton": "Close"
+    "closeButton": "Close",
+    "sitePreview": "Site Preview"
   },
   "toolbar": {
     "selected": "{{count}} selected",

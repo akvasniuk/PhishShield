@@ -264,7 +264,8 @@
     "tabs": {
       "url": "Nach URL",
       "text": "Nach Text",
-      "file": "Nach Datei"
+      "file": "Nach Datei",
+      "audio": "Nach Audio"
     },
     "fields": {
       "url": "URL eingeben",
@@ -307,7 +308,8 @@
     "model": "Modell",
     "prediction": "Vorhersage",
     "probability": "Wahrscheinlichkeit",
-    "closeButton": "Schließen"
+    "closeButton": "Schließen",
+    "sitePreview": "Seitenvorschau"
   },
   "toolbar": {
     "selected": "{{count}} ausgewählt",

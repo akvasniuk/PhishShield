@@ -278,7 +278,8 @@
     "tabs": {
       "url": "Par URL",
       "text": "Par Texte",
-      "file": "Par Fichier"
+      "file": "Par Fichier",
+      "audio": "Par Audio"
     },
     "fields": {
       "url": "Saisir l'URL",
@@ -321,7 +322,8 @@
     "model": "Modèle",
     "prediction": "Prédiction",
     "probability": "Probabilité",
-    "closeButton": "Fermer"
+    "closeButton": "Fermer",
+    "sitePreview": "Aperçu du site"
   },
   "toolbar": {
     "selected": "{{count}} sélectionné(s)",

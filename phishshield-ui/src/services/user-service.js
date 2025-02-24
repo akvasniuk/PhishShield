@@ -10,9 +10,7 @@ const userService = {
     }),
     deleteUser: (userId) => axiosService.delete(`${urls.user.userURL}${userId}`),
     deleteUserByAdmin: (userId) => axiosService.delete(`${urls.user.userURL}/${userId}`),
-    getAdmins: (userId, admin) => axiosService.get(`${urls.user.userURL}/chat/${userId}`, {params: {admin}}),
-    createUserHealth: (userId, data) => axiosService.post(`${urls.user.userHealthURL}/${userId}`, data),
-    getUserHealth: (userId) => axiosService.get(`${urls.user.userHealthURL}/${userId}`),
+    getAdmins: (userId, admin) => axiosService.get(`${urls.user.userURL}chat/${userId}`, {params: {admin}}),
     getUsers: (page = 1, perPage = 5, search) => axiosService.get(urls.user.userURL, {params: {page, perPage, search}})
 }
 

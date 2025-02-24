@@ -278,7 +278,8 @@
     "tabs": {
       "url": "За URL",
       "text": "За Текстом",
-      "file": "За Файлом"
+      "file": "За Файлом",
+      "audio": "За Аудіо"
     },
     "fields": {
       "url": "Введіть URL",
@@ -321,7 +322,8 @@
     "model": "Модель",
     "prediction": "Прогноз",
     "probability": "Ймовірність",
-    "closeButton": "Закрити"
+    "closeButton": "Закрити",
+    "sitePreview": "Попередній перегляд сайту"
   },
   "toolbar": {
     "selected": "{{count}} вибрано",

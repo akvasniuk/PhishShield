@@ -23,6 +23,9 @@ module.exports = {
   PHISHING_PREDICT_API: {
     BY_TEXT: process.env.FASTAPI_CONNECTION_URL + "/predict/text",
     BY_URL: process.env.FASTAPI_CONNECTION_URL + "/predict/url",
+    BY_URL_HTML: process.env.FASTAPI_CONNECTION_URL + "/detect_phishing_url",
+    BY_URL_IMG: process.env.FASTAPI_CONNECTION_URL + "/detect_phishing_url/img",
+    BY_URL_AUDIO: process.env.FASTAPI_CONNECTION_URL + "/detect_phishing_url/audio",
   },
   FILE_API_KEY: process.env.FILE_API_KEY
 };

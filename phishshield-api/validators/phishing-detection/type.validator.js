@@ -1,3 +1,3 @@
 const Joi = require('joi');
 
-module.exports = Joi.equal('text', 'url', 'file');
+module.exports = Joi.equal('text', 'url', 'file', 'audio');

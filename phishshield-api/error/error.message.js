@@ -93,4 +93,8 @@ module.exports = {
     message: 'Just one document for prediction',
     code: 40412
   },
+  JUST_ONE_AUDIO: {
+    message: 'Just one audio for prediction',
+    code: 40413
+  },
 };

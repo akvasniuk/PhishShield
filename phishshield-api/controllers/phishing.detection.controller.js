@@ -19,9 +19,10 @@ module.exports = {
         try {
             const {type} = req.query;
             const bodyData = req.body;
-            const {documentPrediction, user} = req;
+            const {documentPrediction, user, audioPrediction} = req;
 
-            const responseData = await phishingDetectionService.predictPhishing(type,bodyData,documentPrediction, user);
+            const responseData = await phishingDetectionService
+              .predictPhishing(type, bodyData, documentPrediction, user, audioPrediction);
             res.status(statusCode.UPDATED).json(responseData);
         } catch (e) {
             next(e);

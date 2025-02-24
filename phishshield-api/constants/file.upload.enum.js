@@ -2,6 +2,7 @@ module.exports = {
     PHOTO_MAX_SIZE: 1024 * 1024 * 1024, // 1GB
     DOCS_MAX_SIZE: 5 * 1024 * 1024, // 5MB
     VIDEO_MAX_SIZE: 15 * 1024 * 1024, // 15MB
+    AUDIO_MAX_SIZE: 15 * 1024 * 1024, // 15MB
 
     PHOTOS_MIMETYPES: [
         'image/gif',
@@ -10,6 +11,14 @@ module.exports = {
         'image/png',
         'image/tiff',
         'image/webp'
+    ],
+
+    AUDIO_MIMETYPES: [
+        'audio/wav', // WAV
+        'audio/x-wav', // WAV
+        'audio/flac', // FLAC
+        'audio/mpeg', // MP3
+        'audio/mp4' // M4A
     ],
 
     DOCS_MIMETYPES: [

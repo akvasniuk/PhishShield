@@ -7,6 +7,7 @@ router.post("",
     authMiddleware.checkAccessToken,
     fileMiddleware.checkFiles,
     fileMiddleware.checkDocumentForPrediction,
+    fileMiddleware.checkAudioForPrediction,
     phishingDetectionMiddleware.isTypeExists,
     phishingDetectionMiddleware.isPhishingDataValid,
     phishingDetectionController.predictPhishing);

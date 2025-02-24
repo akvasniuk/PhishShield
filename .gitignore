@@ -11,3 +11,6 @@ phishshield-ui/.env
 phishshield-ml/tokenizer.json
 phishshield-ml/tokenizer.pkl
 phishshield-ml/voting_classifier.pkl
+phishshield-ml/tokenizer2.pkl
+phishshield-ml/phishing_detection_model.h5
+phishshield-ml/phishing_model.h5
