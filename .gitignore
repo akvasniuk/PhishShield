@@ -5,8 +5,8 @@ package-lock.json
 Nodejs.iml
 .idea
 phishshield-api/node_modules
+phishshield-api/static
 phishshield-ui/node_modules
-phishshield-api-nest
 phishshield-ui/.env
 phishshield-ml/tokenizer.json
 phishshield-ml/tokenizer.pkl
@@ -14,3 +14,7 @@ phishshield-ml/voting_classifier.pkl
 phishshield-ml/tokenizer2.pkl
 phishshield-ml/phishing_detection_model.h5
 phishshield-ml/phishing_model.h5
+phishshield-api-nest/node_modules
+phishshield-api-nest/.env
+phishshield-api-nest/dist
+phishshield-api-nest/.vscode
